@@ -8,11 +8,6 @@ WORKDIR /app
 # Clona il repository direttamente nella cartella /app
 RUN git clone https://github.com/vBabbanjoker/BatmanVix/ .
 
-cd SelfStream
-npm install
-npm run build
-PORT=7020 node dist/addon.js
-
 # Installa le dipendenze
 RUN npm install
 
